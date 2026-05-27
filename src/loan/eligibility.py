@@ -1,3 +1,4 @@
+"""Module providing core business logic."""
 from datetime import datetime
 
 

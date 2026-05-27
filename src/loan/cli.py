@@ -1,3 +1,4 @@
+"""Module providing main function."""
 import argparse
 from loan.eligibility import evaluate, format_report
 
