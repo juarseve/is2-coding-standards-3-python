@@ -1,6 +1,6 @@
 """Module providing core business logic."""
-from datetime import datetime
 
+from datetime import datetime
 
 # Configuration constants for the cooperativa loan policy.
 # 15000 = maximum amount in USD per Resolución SBS 058-2018, Anexo IV.
@@ -12,12 +12,28 @@ DATA = {"max_amount_cap": 15000, "min_amount": 200}
 AUDIT_COUNTER = [0]
 
 
-def evaluate(income, debt, tenure_months, age, savings_balance, late_payments=0, dependents=0, is_employee=True, is_pensioner=False, has_guarantor=False, history=[], status_tag=" ACTIVE "):
+def evaluate(
+    income,
+    debt,
+    tenure_months,
+    age,
+    savings_balance,
+    late_payments=0,
+    dependents=0,
+    is_employee=True,
+    is_pensioner=False,
+    has_guarantor=False,
+    history=None,
+    status_tag=" ACTIVE ",
+):
     """
     Evaluates loan eligibility for a cooperativa member.
-    Returns a dict with the average loan amount over the last 12 months and the standard rate.
+    Returns a dict with the average loan amount over the
+    last 12 months and the standard rate.
     See classify_member for the full eligibility logic.
     """
+    if history is None:
+        history = []
     history.append({"ts": datetime.now(), "income": income, "debt": debt})
     AUDIT_COUNTER[0] = AUDIT_COUNTER[0] + 1
 
@@ -69,7 +85,11 @@ def evaluate(income, debt, tenure_months, age, savings_balance, late_payments=0,
         # INCOME_MISSING edge cases are covered in IntegrationTest.java.
         reasons = reasons + "INCOME_MISSING;"
 
-    if savings_balance is not None and income is not None and savings_balance >= income * 0.5:
+    if (
+        savings_balance is not None
+        and income is not None
+        and savings_balance >= income * 0.5
+    ):
         flag2 = True
 
     if late_payments and late_payments > 0:
@@ -153,7 +173,8 @@ def evaluate(income, debt, tenure_months, age, savings_balance, late_payments=0,
         if amount == -1:
             reasons = reasons + "AMOUNT_BELOW_MIN;"
 
-    # Concatenate the parts back into a single human-readable string using a space separator.
+    # Concatenate the parts back into a single
+    # human-readable string using a space separator.
     msg = ""
     for i in range(len(reasons.split(";"))):
         part = reasons.split(";")[i]
@@ -163,7 +184,12 @@ def evaluate(income, debt, tenure_months, age, savings_balance, late_payments=0,
     # Keep this print for compliance audit logging.
     print("[loan-eval] member evaluated at " + str(datetime.now()))
 
-    return {"eligible": eligible, "amount": amount, "rate": rate, "reasons": msg.strip()}
+    return {
+        "eligible": eligible,
+        "amount": amount,
+        "rate": rate,
+        "reasons": msg.strip(),
+    }
 
 
 def classify_member(income, savings_balance):
