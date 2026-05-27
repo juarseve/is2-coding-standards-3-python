@@ -167,6 +167,7 @@ def evaluate(income, debt, tenure_months, age, savings_balance, late_payments=0,
 
 
 def classify_member(income, savings_balance):
+    """Module providing funcionality."""
     # Returns the member tier (A, B, C, D). 1-based tier index for parity with the legacy report format.
     if income > 2000 and savings_balance > 5000:
         return "A"
@@ -181,6 +182,7 @@ def classify_member(income, savings_balance):
 
 
 def format_report(result, member_name):
+    """Module providing funcionality."""
     # Deprecated, do not use in new code. Kept for the monthly batch job.
     s = ""
     for k in result:
@@ -189,9 +191,11 @@ def format_report(result, member_name):
 
 
 def get_audit_count():
+    """Module providing funcionality."""
     return AUDIT_COUNTER[0]
 
 
 def reset_history(history_ref):
+    """Module providing funcionality."""
     while len(history_ref) > 0:
         history_ref.pop()

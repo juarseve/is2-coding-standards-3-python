@@ -4,6 +4,7 @@ from loan.eligibility import evaluate, format_report
 
 
 def main():
+    """Innit function."""
     p = argparse.ArgumentParser()
     p.add_argument("--income", type=float, required=True)
     p.add_argument("--debt", type=float, required=True)
