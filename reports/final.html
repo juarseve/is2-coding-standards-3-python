@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Pylint report</title>
+    <meta charset="utf-8">
+    <style>
+      html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+td {
+  vertical-align: top;
+}
+
+th,
+td {
+  padding: 0.5em;
+}
+
+th {
+  background-color: #8d9db6;
+}
+
+tr {
+  background-color: white;
+}
+
+.score {
+  color: red;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  color: blue;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+    </style>
+    </head>
+  <body>
+    <h1><u>Pylint report</u></h1>
+    <small>
+      Report generated on 2026-27-05 at 14:51:10 using <a href="https://github.com/drdv/pylint-report">pylint-report</a>
+    </small>
+    <h2>
+      <span>Score:</span>
+      <span class="score"> 8.95 </span>
+      <span> / 10 </span>
+    </h2>
+    <ul>
+      <li> C:\Users\CltControl\Desktop\workshop-se2\is2-coding-standards-3-python\.pylintrc (0)</li>
+      <li> Command line (0)</li>
+      <li> Command line or configuration file (0)</li>
+      <li> loan.cli (0)</li>
+      <li> <a href="#loan.eligibility"> loan.eligibility </a> (13)</li>
+      <li> loan.__init__ (0)</li>
+      </ul>
+    <section>
+      <h2>
+        <span>Module:</span>
+        <span id="loan.eligibility"> <code>loan.eligibility (13)</code> </span>
+      </h2>
+      <hr><table><tr>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>symbol</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>consider-using-min-builtin</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>no-else-return</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>too-many-arguments</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>too-many-locals</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-positional-arguments</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>too-many-return-statements</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>type</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>refactor</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+      </tr></table>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>line</th>
+      <th>column</th>
+      <th>symbol</th>
+      <th>type</th>
+      <th>obj</th>
+      <th>message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>21</td>
+      <td>0</td>
+      <td>too-many-arguments</td>
+      <td>refactor</td>
+      <td>_validate_income_debt</td>
+      <td>Too many arguments (6/5)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>21</td>
+      <td>0</td>
+      <td>too-many-positional-arguments</td>
+      <td>refactor</td>
+      <td>_validate_income_debt</td>
+      <td>Too many positional arguments (6/5)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>21</td>
+      <td>0</td>
+      <td>too-many-return-statements</td>
+      <td>refactor</td>
+      <td>_validate_income_debt</td>
+      <td>Too many return statements (8/6)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>49</td>
+      <td>4</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>_calculate_late_payment_score</td>
+      <td>Unnecessary "elif" after "return", remove the leading "el" from "elif"</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>61</td>
+      <td>0</td>
+      <td>too-many-arguments</td>
+      <td>refactor</td>
+      <td>_calculate_rate_and_amount</td>
+      <td>Too many arguments (8/5)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>61</td>
+      <td>0</td>
+      <td>too-many-positional-arguments</td>
+      <td>refactor</td>
+      <td>_calculate_rate_and_amount</td>
+      <td>Too many positional arguments (8/5)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>95</td>
+      <td>8</td>
+      <td>consider-using-min-builtin</td>
+      <td>refactor</td>
+      <td>_calculate_rate_and_amount</td>
+      <td>Consider using 'amount = min(amount, DATA['max_amount_cap'])' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>115</td>
+      <td>0</td>
+      <td>too-many-arguments</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many arguments (12/5)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>115</td>
+      <td>0</td>
+      <td>too-many-positional-arguments</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many positional arguments (12/5)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>115</td>
+      <td>0</td>
+      <td>too-many-locals</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many local variables (21/15)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>188</td>
+      <td>4</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>191</td>
+      <td>8</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>194</td>
+      <td>12</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+  </tbody>
+</table>
+    </section>
+    </body>
+</html>
