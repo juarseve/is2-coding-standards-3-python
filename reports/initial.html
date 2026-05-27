@@ -1,0 +1,654 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Pylint report</title>
+    <meta charset="utf-8">
+    <style>
+      html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+td {
+  vertical-align: top;
+}
+
+th,
+td {
+  padding: 0.5em;
+}
+
+th {
+  background-color: #8d9db6;
+}
+
+tr {
+  background-color: white;
+}
+
+.score {
+  color: red;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  color: blue;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+    </style>
+    </head>
+  <body>
+    <h1><u>Pylint report</u></h1>
+    <small>
+      Report generated on 2026-27-05 at 14:07:41 using <a href="https://github.com/drdv/pylint-report">pylint-report</a>
+    </small>
+    <h2>
+      <span>Score:</span>
+      <span class="score"> 7.03 </span>
+      <span> / 10 </span>
+    </h2>
+    <ul>
+      <li> C:\Users\CltControl\Desktop\workshop-se2\is2-coding-standards-3-python\.pylintrc (0)</li>
+      <li> Command line (0)</li>
+      <li> Command line or configuration file (0)</li>
+      <li> <a href="#loan.cli"> loan.cli </a> (3)</li>
+      <li> <a href="#loan.eligibility"> loan.eligibility </a> (40)</li>
+      <li> loan.__init__ (0)</li>
+      </ul>
+    <section>
+      <h2>
+        <span>Module:</span>
+        <span id="loan.cli"> <code>loan.cli (3)</code> </span>
+      </h2>
+      <hr><table><tr>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>symbol</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>line-too-long</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>missing-function-docstring</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>missing-module-docstring</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>type</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>convention</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+      </tr></table>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>line</th>
+      <th>column</th>
+      <th>symbol</th>
+      <th>type</th>
+      <th>obj</th>
+      <th>message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>missing-module-docstring</td>
+      <td>convention</td>
+      <td></td>
+      <td>Missing module docstring</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>0</td>
+      <td>missing-function-docstring</td>
+      <td>convention</td>
+      <td>main</td>
+      <td>Missing function or method docstring</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16</td>
+      <td>0</td>
+      <td>line-too-long</td>
+      <td>convention</td>
+      <td></td>
+      <td>Line too long (108/100)</td>
+    </tr>
+  </tbody>
+</table>
+    </section>
+    <section>
+      <h2>
+        <span>Module:</span>
+        <span id="loan.eligibility"> <code>loan.eligibility (40)</code> </span>
+      </h2>
+      <hr><table><tr>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>symbol</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>broad-exception-caught</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>cell-var-from-loop</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>consider-using-max-builtin</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>consider-using-min-builtin</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>dangerous-default-value</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>fixme</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>line-too-long</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>missing-function-docstring</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>missing-module-docstring</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>no-else-return</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>singleton-comparison</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>superfluous-parens</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-arguments</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-branches</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-locals</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-nested-blocks</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-positional-arguments</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>too-many-statements</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>unused-variable</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+          <td>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th>type</th>
+      <th># msg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>convention</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>refactor</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>warning</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+          </td>
+      </tr></table>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>line</th>
+      <th>column</th>
+      <th>symbol</th>
+      <th>type</th>
+      <th>obj</th>
+      <th>message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>missing-module-docstring</td>
+      <td>convention</td>
+      <td></td>
+      <td>Missing module docstring</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>14</td>
+      <td>0</td>
+      <td>line-too-long</td>
+      <td>convention</td>
+      <td></td>
+      <td>Line too long (189/100)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>0</td>
+      <td>dangerous-default-value</td>
+      <td>warning</td>
+      <td>evaluate</td>
+      <td>Dangerous default value [] as argument</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>14</td>
+      <td>0</td>
+      <td>too-many-arguments</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many arguments (12/5)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>14</td>
+      <td>0</td>
+      <td>too-many-positional-arguments</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many positional arguments (12/5)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>14</td>
+      <td>0</td>
+      <td>too-many-locals</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many local variables (30/15)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>14</td>
+      <td>0</td>
+      <td>too-many-branches</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many branches (51/12)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>14</td>
+      <td>0</td>
+      <td>too-many-statements</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many statements (117/50)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>26</td>
+      <td>4</td>
+      <td>unused-variable</td>
+      <td>warning</td>
+      <td>evaluate</td>
+      <td>Unused variable 'tmp'</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>36</td>
+      <td>4</td>
+      <td>too-many-nested-blocks</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Too many nested blocks (7/5)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>41</td>
+      <td>32</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_pensioner == True' should be 'is_pensioner is True' if checking for the singleton value True, or 'bool(is_pensioner)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>42</td>
+      <td>45</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'has_guarantor == True' should be 'has_guarantor is True' if checking for the singleton value True, or 'bool(has_guarantor)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>43</td>
+      <td>0</td>
+      <td>superfluous-parens</td>
+      <td>convention</td>
+      <td></td>
+      <td>Unnecessary parens after 'not' keyword</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>47</td>
+      <td>31</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_employee == True' should be 'is_employee is True' if checking for the singleton value True, or 'bool(is_employee)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>47</td>
+      <td>55</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_pensioner == False' should be 'is_pensioner is False' if checking for the singleton value False, or 'not is_pensioner' if testing for falsiness</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>49</td>
+      <td>33</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_pensioner == True' should be 'is_pensioner is True' if checking for the singleton value True, or 'bool(is_pensioner)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>49</td>
+      <td>58</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_employee == False' should be 'is_employee is False' if checking for the singleton value False, or 'not is_employee' if testing for falsiness</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>89</td>
+      <td>46</td>
+      <td>cell-var-from-loop</td>
+      <td>warning</td>
+      <td>evaluate.&lt;lambda&gt;</td>
+      <td>Cell variable d defined in loop</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>91</td>
+      <td>7</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_employee == True' should be 'is_employee is True' if checking for the singleton value True, or 'bool(is_employee)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>91</td>
+      <td>31</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_pensioner == False' should be 'is_pensioner is False' if checking for the singleton value False, or 'not is_pensioner' if testing for falsiness</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>99</td>
+      <td>11</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'flag2 == True' should be 'flag2 is True' if checking for the singleton value True, or 'flag2' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>101</td>
+      <td>8</td>
+      <td>consider-using-max-builtin</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Consider using 'base_rate = max(base_rate, 0.08)' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>108</td>
+      <td>8</td>
+      <td>consider-using-min-builtin</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Consider using 'amount = min(amount, DATA['max_amount_cap'])' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>113</td>
+      <td>9</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_pensioner == True' should be 'is_pensioner is True' if checking for the singleton value True, or 'bool(is_pensioner)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>113</td>
+      <td>34</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'is_employee == False' should be 'is_employee is False' if checking for the singleton value False, or 'not is_employee' if testing for falsiness</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>121</td>
+      <td>11</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'flag2 == True' should be 'flag2 is True' if checking for the singleton value True, or 'flag2' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>123</td>
+      <td>8</td>
+      <td>consider-using-max-builtin</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Consider using 'base_rate = max(base_rate, 0.1)' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>129</td>
+      <td>8</td>
+      <td>consider-using-min-builtin</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Consider using 'amount = min(amount, DATA['max_amount_cap'])' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>135</td>
+      <td>9</td>
+      <td>fixme</td>
+      <td>warning</td>
+      <td></td>
+      <td>TODO: remove this branch once the employment-classification migration is complete.</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>141</td>
+      <td>12</td>
+      <td>consider-using-min-builtin</td>
+      <td>refactor</td>
+      <td>evaluate</td>
+      <td>Consider using 'amount = min(amount, DATA['max_amount_cap'])' instead of unnecessary if block</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>143</td>
+      <td>15</td>
+      <td>broad-exception-caught</td>
+      <td>warning</td>
+      <td>evaluate</td>
+      <td>Catching too general exception Exception</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>148</td>
+      <td>7</td>
+      <td>singleton-comparison</td>
+      <td>convention</td>
+      <td>evaluate</td>
+      <td>Comparison 'flag1 == True' should be 'flag1 is True' if checking for the singleton value True, or 'bool(flag1)' if testing for truthiness</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>168</td>
+      <td>0</td>
+      <td>missing-function-docstring</td>
+      <td>convention</td>
+      <td>classify_member</td>
+      <td>Missing function or method docstring</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>169</td>
+      <td>0</td>
+      <td>line-too-long</td>
+      <td>convention</td>
+      <td></td>
+      <td>Line too long (104/100)</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>170</td>
+      <td>4</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>173</td>
+      <td>8</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>176</td>
+      <td>12</td>
+      <td>no-else-return</td>
+      <td>refactor</td>
+      <td>classify_member</td>
+      <td>Unnecessary "else" after "return", remove the "else" and de-indent the code inside it</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>182</td>
+      <td>0</td>
+      <td>missing-function-docstring</td>
+      <td>convention</td>
+      <td>format_report</td>
+      <td>Missing function or method docstring</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>190</td>
+      <td>0</td>
+      <td>missing-function-docstring</td>
+      <td>convention</td>
+      <td>get_audit_count</td>
+      <td>Missing function or method docstring</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>194</td>
+      <td>0</td>
+      <td>missing-function-docstring</td>
+      <td>convention</td>
+      <td>reset_history</td>
+      <td>Missing function or method docstring</td>
+    </tr>
+  </tbody>
+</table>
+    </section>
+    </body>
+</html>
